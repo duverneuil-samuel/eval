@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balades Paris</title>
+</head>
+<body>
+    <h1>Liste des Balades</h1>
+    <ul>
+        <% balades.forEach(walk => { %>
+            <li><%= walk.nom %> - Arrondissement: <%= walk.arrondissement %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
